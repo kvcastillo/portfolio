@@ -21,9 +21,7 @@ const Navbar = () => {
             {link}
           </button>
         ))}
-        <button onClick={() => toggleDarkMode}>
-          {isDarkMode ? "🔦" : "🌑"}
-        </button>
+        <button onClick={toggleDarkMode}>{isDarkMode ? "🔦" : "🌑"}</button>
       </div>
 
       {/* Right Pane */}

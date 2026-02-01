@@ -25,5 +25,5 @@ export const useDark = () => {
   }, [isDarkMode]);
 
   //   return the DarkModeValue and Toggler
-  return [isDarkMode, toggleDarkMode];
+  return [isDarkMode, toggleDarkMode] as const;
 };

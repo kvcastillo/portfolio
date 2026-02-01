@@ -28,9 +28,19 @@ const Navbar = () => {
 
       {/* Right Pane */}
       <div className=" flex gap-5 p-5 border-2 rounded-full">
-        <h6>Github</h6>
-        <h6>Linkedin</h6>
-        <h6>Instagram</h6>
+        <h6>
+          <a
+            href="https://www.linkedin.com/in/ken-castillo-64901a373/"
+            target="_blank"
+          >
+            Linkedin
+          </a>
+        </h6>
+        <h6>
+          <a href="https://github.com/kvcastillo" target="_blank">
+            Github
+          </a>
+        </h6>
       </div>
     </div>
   );

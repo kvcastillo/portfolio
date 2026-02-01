@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-black text-white;
+}
+
+/* light mode class */
+.light-mode {
+  @apply bg-white text-black;
+}

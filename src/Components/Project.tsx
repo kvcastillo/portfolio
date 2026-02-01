@@ -20,18 +20,17 @@ const Project = () => {
       <div className="mt-5 flex flex-col justify-center items-center">
         <h3 className="text-5xl pt-24">My Latest Work</h3>
         <h5 className="w-100 mt-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias
-          aliquid, delectus, quis commodi sequi quas libero tempora doloribus ea
-          magni animi quisquam eius illo eligendi molestiae iusto vitae natus.
+          <i>
+            These projects showcase my experience building web applications,
+            focusing on clean UI, performance, and practical features.
+          </i>
         </h5>
       </div>
       {/* Project Section */}
 
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-5 py-12">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-5 py-12 mt-10">
         {projects.map((project) => (
-          <>
-            <ProjectItem project={project} />
-          </>
+          <ProjectItem project={project} key={project.src} />
         ))}
       </div>
     </>

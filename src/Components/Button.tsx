@@ -11,7 +11,7 @@ const Button = ({ children, size }: ButtonProps) => {
   };
   return (
     <div
-      className={`${sizeClass[size]} border-2 text-center border-[#1C1C1C]  hover:cursor-pointer`}
+      className={`${sizeClass[size]} border-2 text-center mt-3 border-[#1C1C1C]  hover:cursor-pointer`}
     >
       {children}
     </div>

@@ -8,3 +8,8 @@ body {
 .light-mode {
   @apply bg-white text-black;
 }
+
+/* input fields */
+.contact-input {
+  @apply border h-10 mt-5 w-49;
+}

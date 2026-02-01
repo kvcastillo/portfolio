@@ -5,10 +5,11 @@ const Hero = () => {
     <div className="flex flex-col sm:flex-row h-200 sm:h-screen justify-evenly items-center">
       {/* Description */}
       <div>
+        <h1>Hey, Kenzo Here.</h1>
         <h1 className="sm:text-4xl md:text-8xl text-4xl text-green-300 text-center">
           I build full stack Web Applications.
         </h1>
-        <Button size={`sm`}> Hire Me. </Button>
+        <Button size="sm"> Hire Me. </Button>
       </div>
 
       {/* Middle Divider */}

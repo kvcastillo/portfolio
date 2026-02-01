@@ -1,5 +1,4 @@
 import { useDark } from "../hooks/useDark";
-
 const Navbar = () => {
   const [isDarkMode, toggleDarkMode] = useDark();
   const links = ["Home", "About", "Skills", "Projects", "Contact"];
@@ -22,13 +21,15 @@ const Navbar = () => {
             {link}
           </button>
         ))}
-        <button onClick={toggleDarkMode}>{isDarkMode ? "🔦" : "🌑"}</button>
+        <button onClick={() => toggleDarkMode}>
+          {isDarkMode ? "🔦" : "🌑"}
+        </button>
       </div>
 
       {/* Right Pane */}
       <div className=" flex gap-5 p-5 border-2 rounded-full">
         <h6>Github</h6>
-        <h6>Twitter</h6>
+        <h6>Linkedin</h6>
         <h6>Instagram</h6>
       </div>
     </div>

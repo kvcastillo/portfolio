@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 type ProjectItemProp = {
   project: {
     name: string;
@@ -14,11 +16,11 @@ const ProjectItem = ({ project }: ProjectItemProp) => {
 
         <img src={project.src} className="w-80 h-40 object-cover" />
         <div className="flex gap-10">
-          <button className="">
+          <Button size="md">
             <a href={project.vercel} target="_blank">
-              Visit Site
+              View
             </a>
-          </button>
+          </Button>
         </div>
       </div>
     </>

@@ -14,6 +14,18 @@ const Project = () => {
       vercel: "https://swiftcart-project-ecru.vercel.app/",
       github: "",
     },
+    {
+      name: "Kingsman Clothing",
+      src: "/kingsman_homepage.png",
+      vercel: "https://kingsmanclothing.vercel.app/",
+      github: "https://github.com/kvcastillo/kingsmanclothing/",
+    },
+    {
+      name: "Kingsman Clothing",
+      src: "/kingsman.png",
+      vercel: "https://kingsmanclothing.vercel.app/",
+      github: "https://github.com/kvcastillo/kingsmanclothing/",
+    },
   ];
   return (
     <>

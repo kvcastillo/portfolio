@@ -14,11 +14,12 @@ export const Skills = () => {
         "PostgreSQL",
         "REST APIs",
         "NextAuth v5",
+        "Java · SQL",
       ],
     },
     {
       label: "Tooling",
-      items: ["Git", "Vercel", "Supabase", "CI/CD", "Java · SQL"],
+      items: ["Git", "Vercel", "Supabase", "CI/CD"],
     },
   ];
   return (

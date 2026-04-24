@@ -1,4 +1,10 @@
-export const SectionHeader = ({ index, title }) => (
+export const SectionHeader = ({
+  index,
+  title,
+}: {
+  index: string;
+  title: string;
+}) => (
   <div className="grid grid-cols-[200px_1fr] gap-12 items-baseline pb-12 border-b border-neutral-200 mb-16">
     <span className="text-[0.68rem] tracking-[0.2em] uppercase text-neutral-300">
       {index}

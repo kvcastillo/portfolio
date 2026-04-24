@@ -1,6 +1,6 @@
 export const Hero = () => {
   const STATS = [
-    { num: "4+", label: "Years of Experience" },
+    { num: "4", label: "Years of Experience" },
     { num: "1", label: "Production Project" },
     { num: "Full", label: "Stack Coverage" },
   ];

@@ -13,7 +13,7 @@ export const Contact = () => {
     subject: "",
     message: "",
   });
-  const handleChange = (e) =>
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
   return (
@@ -70,7 +70,12 @@ export const Contact = () => {
             <textarea
               name="message"
               value={form.message}
-              onChange={handleChange}
+              onChange={(e) =>
+                setForm((prev) => ({
+                  ...prev,
+                  [e.target.name]: e.target.value,
+                }))
+              }
               placeholder="Your message..."
               className="bg-transparent border-none outline-none border-b border-neutral-200 font-sans text-[0.82rem] text-neutral-900 px-5 py-5 resize-none min-h-[130px] placeholder:text-neutral-300"
             />

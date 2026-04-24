@@ -1,15 +1,35 @@
 @import "tailwindcss";
 
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap");
+.font-syne {
+  font-family: "Syne", sans-serif;
+}
 body {
-  @apply bg-black text-white;
+  font-family: "Inter", sans-serif;
 }
-
-/* light mode class */
-.light-mode {
-  @apply bg-white text-black;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-/* input fields */
-.contact-input {
-  @apply border h-10 mt-5 w-49;
+.animate-fade-up {
+  animation: fadeUp 0.6s ease both;
+}
+::selection {
+  background: #111;
+  color: #fff;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+html {
+  scroll-behavior: smooth;
 }

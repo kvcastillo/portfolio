@@ -1,22 +1,21 @@
-import "./App.css";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
-import Navbar from "./Components/Navbar";
-import Project from "./Components/Project";
-import Skills from "./Components/Skills";
+// ─── APP ──────────────────────────────────────────────────────────────────────
 
-function App() {
+import { Contact } from "./Components/Contact";
+import { Footer } from "./Components/Footer";
+import { Hero } from "./Components/Hero";
+import { Navbar } from "./Components/Navbar";
+import { Projects } from "./Components/Project";
+import { Skills } from "./Components/Skills";
+
+export default function Portfolio() {
   return (
-    <div className="overflow-x-hidden">
+    <>
       <Navbar />
       <Hero />
       <Skills />
-      <Project />
+      <Projects />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
-
-export default App;
